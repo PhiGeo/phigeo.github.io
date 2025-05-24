@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Philip Georgiev - Student Resume</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            body {
+                font-family: "Inter", sans-serif;
+                -webkit-print-color-adjust: exact; /* Ensures background colors print in Chrome/Safari */
+                color-adjust: exact; /* Ensures background colors print in Firefox */
+            }
+
+            /* Print specific styles */
+            @media print {
+                body {
+                    font-size: 10pt; /* Adjust font size for print */
+                    margin: 0;
+                    padding: 0;
+                    background-color: #fff; /* Ensure white background for printing */
+                }
+                .no-print {
+                    display: none; /* Hide elements not needed for print */
+                }
+                .print-show {
+                    display: block !important; /* Force show elements for print */
+                }
+                .container {
+                    box-shadow: none !important; /* Remove shadow for print */
+                    border: none !important; /* Remove border for print */
+                    padding: 0 !important;
+                    margin: 0 auto !important; /* Center content on print */
+                    max-width: 100% !important; /* Use full width for print */
+                }
+                header,
+                section {
+                    padding-top: 0.5rem !important;
+                    padding-bottom: 0.5rem !important;
+                }
+                h1,
+                h2,
+                h3 {
+                    color: #000 !important; /* Ensure text is black for print */
+                }
+                a {
+                    text-decoration: none;
+                    color: #000 !important; /* Ensure links are black for print */
+                }
+                /* Ensure Tailwind background colors print */
+                .bg-sky-600 {
+                    background-color: #0284c7 !important;
+                }
+                .bg-slate-100 {
+                    background-color: #f1f5f9 !important;
+                }
+                .text-sky-600 {
+                    color: #0284c7 !important;
+                }
+                .print-break-inside-avoid {
+                    break-inside: avoid; /* Avoid breaking elements across pages */
+                }
+            }
+        </style>
+    </head>
+    <body class="bg-slate-100 text-slate-800 antialiased">
+        <div
+            class="container mx-auto max-w-4xl p-4 sm:p-6 lg:p-8 my-5 sm:my-10 bg-white rounded-xl shadow-2xl print:shadow-none print:border print:border-slate-300"
+        >
+            <header
+                class="text-center border-b-2 border-sky-600 pb-6 mb-8 print:border-b-2 print:border-black"
+            >
+                <h1
+                    class="text-4xl sm:text-5xl font-bold text-sky-700 print:text-black"
+                >
+                    Your Name
+                </h1>
+                <p class="text-lg text-slate-600 mt-2 print:text-black">
+                    High School Student Seeking Summer Employment
+                </p>
+                <div
+                    class="mt-4 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-slate-500 print:text-black"
+                >
+                    <span
+                        ><i
+                            class="fas fa-phone mr-1 text-sky-600 print:text-black"
+                        ></i>
+                        (123) 456-7890</span
+                    >
+                    <span
+                        ><i
+                            class="fas fa-envelope mr-1 text-sky-600 print:text-black"
+                        ></i>
+                        your.email@example.com</span
+                    >
+                    <span
+                        ><i
+                            class="fas fa-map-marker-alt mr-1 text-sky-600 print:text-black"
+                        ></i>
+                        Saint-Lambert, QC</span
+                    >
+                </div>
+            </header>
+
+            <main>
+                <section class="mb-8 print-break-inside-avoid">
+                    <h2
+                        class="text-2xl font-semibold text-sky-700 border-b border-slate-300 pb-2 mb-4 print:text-black print:border-slate-500"
+                    >
+                        Objective
+                    </h2>
+                    <p class="text-slate-700 leading-relaxed">
+                        A motivated and enthusiastic high school student with a
+                        strong work ethic seeking a summer employment
+                        opportunity to gain practical experience and contribute
+                        to a dynamic team. Eager to learn new skills and apply
+                        existing knowledge in a professional setting.
+                    </p>
+                </section>
+
+                <section class="mb-8 print-break-inside-avoid">
+                    <h2
+                        class="text-2xl font-semibold text-sky-700 border-b border-slate-300 pb-2 mb-4 print:text-black print:border-slate-500"
+                    >
+                        Education
+                    </h2>
+                    <div class="mb-4">
+                        <h3
+                            class="text-lg font-semibold text-slate-800 print:text-black"
+                        >
+                            Your High School Name
+                        </h3>
+                        <p class="text-slate-600 text-sm print:text-black">
+                            Expected Graduation: June 20XX
+                        </p>
+                        <p class="text-slate-600 text-sm print:text-black">
+                            City, State
+                        </p>
+                        <ul
+                            class="list-disc list-inside mt-2 text-slate-700 space-y-1"
+                        >
+                            <li>
+                                Relevant Coursework: Introduction to Business,
+                                Computer Applications, Public Speaking
+                                (Customize as needed)
+                            </li>
+                            <li>GPA: X.X (Optional: Include if strong)</li>
+                            <li>
+                                Honors/Awards: Honor Roll (Fall 20XX, Spring
+                                20XX), Science Fair Participant (Customize as
+                                needed)
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="mb-8 print-break-inside-avoid">
+                    <h2
+                        class="text-2xl font-semibold text-sky-700 border-b border-slate-300 pb-2 mb-4 print:text-black print:border-slate-500"
+                    >
+                        Work Experience
+                    </h2>
+                    <div class="mb-6">
+                        <h3
+                            class="text-lg font-semibold text-slate-800 print:text-black"
+                        >
+                            Job Title (e.g., Babysitter, Lawn Care Assistant,
+                            Dog Walker)
+                        </h3>
+                        <p
+                            class="text-slate-600 text-sm italic print:text-black"
+                        >
+                            Self-Employed / Family Friend | City, State | Summer
+                            20XX (or Dates)
+                        </p>
+                        <ul
+                            class="list-disc list-inside mt-2 text-slate-700 space-y-1"
+                        >
+                            <li>
+                                Provided responsible and engaging care for
+                                children aged X-Y.
+                            </li>
+                            <li>
+                                Maintained lawns and gardens for several
+                                neighborhood clients, ensuring high-quality
+                                work.
+                            </li>
+                            <li>
+                                Managed scheduling and communication with
+                                clients professionally.
+                            </li>
+                        </ul>
+                    </div>
+                    <!--
+                <div class="mb-6">
+                    <h3 class="text-lg font-semibold text-slate-800 print:text-black">Another Job Title</h3>
+                    <p class="text-slate-600 text-sm italic print:text-black">Company Name (if applicable) | City, State | Dates of Employment</p>
+                    <ul class="list-disc list-inside mt-2 text-slate-700 space-y-1">
+                        <li>Responsibility or achievement 1.</li>
+                        <li>Responsibility or achievement 2.</li>
+                    </ul>
+                </div>
+                -->
+                    <p class="text-slate-700 leading-relaxed italic">
+                        No formal work experience to date. Eager to apply
+                        classroom knowledge and develop professional skills in a
+                        summer role.
+                    </p>
+                </section>
+
+                <section class="mb-8 print-break-inside-avoid">
+                    <h2
+                        class="text-2xl font-semibold text-sky-700 border-b border-slate-300 pb-2 mb-4 print:text-black print:border-slate-500"
+                    >
+                        Volunteer Experience
+                    </h2>
+                    <div class="mb-6">
+                        <h3
+                            class="text-lg font-semibold text-slate-800 print:text-black"
+                        >
+                            Volunteer Role (e.g., Food Bank Volunteer, Event
+                            Assistant)
+                        </h3>
+                        <p
+                            class="text-slate-600 text-sm italic print:text-black"
+                        >
+                            Organization Name | City, State | Dates of Service
+                            (e.g., Fall 20XX - Present)
+                        </p>
+                        <ul
+                            class="list-disc list-inside mt-2 text-slate-700 space-y-1"
+                        >
+                            <li>
+                                Assisted with sorting and packaging food
+                                donations for community distribution.
+                            </li>
+                            <li>
+                                Helped set up and manage activities at the
+                                annual community fair.
+                            </li>
+                            <li>Contributed X hours of service per month.</li>
+                        </ul>
+                    </div>
+                    <!--
+                <div class="mb-6">
+                    <h3 class="text-lg font-semibold text-slate-800 print:text-black">Another Volunteer Role</h3>
+                    <p class="text-slate-600 text-sm italic print:text-black">Organization Name | City, State | Dates of Service</p>
+                    <ul class="list-disc list-inside mt-2 text-slate-700 space-y-1">
+                        <li>Responsibility or contribution 1.</li>
+                        <li>Responsibility or contribution 2.</li>
+                    </ul>
+                </div>
+                -->
+                    <p class="text-slate-700 leading-relaxed italic">
+                        Actively seeking volunteer opportunities to contribute
+                        to the community.
+                    </p>
+                </section>
+
+                <section class="print-break-inside-avoid">
+                    <h2
+                        class="text-2xl font-semibold text-sky-700 border-b border-slate-300 pb-2 mb-4 print:text-black print:border-slate-500"
+                    >
+                        Skills
+                    </h2>
+                    <div
+                        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
+                    >
+                        <div>
+                            <h3
+                                class="text-md font-semibold text-slate-700 print:text-black"
+                            >
+                                Technical Skills:
+                            </h3>
+                            <ul
+                                class="list-disc list-inside text-slate-700 space-y-1"
+                            >
+                                <li>
+                                    Microsoft Office Suite (Word, Excel,
+                                    PowerPoint)
+                                </li>
+                                <li>Google Workspace (Docs, Sheets, Slides)</li>
+                                <li>Basic HTML/CSS (If applicable)</li>
+                                <li>Typing Speed: XX WPM (If good)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3
+                                class="text-md font-semibold text-slate-700 print:text-black"
+                            >
+                                Soft Skills:
+                            </h3>
+                            <ul
+                                class="list-disc list-inside text-slate-700 space-y-1"
+                            >
+                                <li>Teamwork & Collaboration</li>
+                                <li>Communication (Written & Verbal)</li>
+                                <li>Problem-Solving</li>
+                                <li>Time Management</li>
+                                <li>Adaptability & Flexibility</li>
+                                <li>Quick Learner</li>
+                                <li>Responsible & Punctual</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3
+                                class="text-md font-semibold text-slate-700 print:text-black"
+                            >
+                                Languages:
+                            </h3>
+                            <ul
+                                class="list-disc list-inside text-slate-700 space-y-1"
+                            >
+                                <li>English (Native)</li>
+                                <li>
+                                    Spanish (Basic/Conversational - if
+                                    applicable)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer
+                class="text-center mt-10 pt-6 border-t border-slate-300 print:border-slate-500"
+            >
+                <p class="text-sm text-slate-500 print:text-black">
+                    Available for summer employment starting [Your Start Date].
+                </p>
+                <button
+                    onclick="window.print()"
+                    class="mt-4 no-print bg-sky-600 hover:bg-sky-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-opacity-50"
+                >
+                    <i class="fas fa-print mr-2"></i>Print Resume
+                </button>
+            </footer>
+        </div>
+    </body>
+</html>
